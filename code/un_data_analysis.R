@@ -133,3 +133,5 @@ gdp_co2_region %>%
   aes(x = gdpPercap, y = per_capita_emissions, color = region)+
   labs(x = "GDP Per Capita", y = "Emissions")+
   geom_point()
+
+write_csv(gap_co2_region, "gapminder_co2.csv")
